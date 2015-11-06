@@ -3,6 +3,6 @@ project(ReaderWriterSample)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -pthread")
 
-set(SOURCE_FILES main.cpp)
+set(SOURCE_FILES main.cpp read_write_lock.h read_write_lock.cpp)
 link_libraries(-lrt)
 add_executable(ReaderWriterSample ${SOURCE_FILES})
