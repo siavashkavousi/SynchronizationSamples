@@ -25,7 +25,7 @@ int main() {
         perror("failed to create shared memory");
         exit(EXIT_FAILURE);
     }
-    if ((ftruncate(fd, 4 * sizeof(int))) == -1) {
+    if ((ftruncate(fd, sizeof(shared_values1))) == -1) {
         perror("failed to set size of the shared memory");
         exit(EXIT_FAILURE);
     }
